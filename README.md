@@ -9,7 +9,7 @@ platform already makes public, so anyone can verify it at the source.
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="out/heatmap-light.svg">
-  <img alt="Unified contribution heatmap: GitLab private contributions in orange, GitHub public contributions in green" src="out/heatmap-dark.svg">
+  <img alt="Unified contribution heatmap: GitLab contributions in orange, GitHub contributions in green, private work included as counts" src="out/heatmap-dark.svg">
 </picture>
 
 ## How it works

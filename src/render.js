@@ -58,7 +58,7 @@ export function renderHeatmap(days, stats, { theme = 'dark', gitlabUser, githubU
   const title = `${fmt(stats.total)} contributions in the last year`;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="t d">
 <title id="t">${esc(title)}</title>
-<desc id="d">${esc(`${fmt(stats.gitlab)} on GitLab (private repositories, counts only) and ${fmt(stats.github)} on GitHub; ${stats.activeDays} active days.`)}</desc>
+<desc id="d">${esc(`${fmt(stats.gitlab)} on GitLab and ${fmt(stats.github)} on GitHub (daily counts only, private work included); ${stats.activeDays} active days.`)}</desc>
 <style>text{font-family:${SANS};fill:${t.muted};font-size:10px}.h{fill:${t.fg};font-size:14px;font-weight:600}</style>
 <rect width="100%" height="100%" rx="8" fill="${t.bg}"/>
 <text x="${left}" y="22" class="h">${esc(title)}</text>
@@ -66,9 +66,9 @@ export function renderHeatmap(days, stats, { theme = 'dark', gitlabUser, githubU
 ${months.join('')}
 <text x="4" y="${top + 1 * step + 9}">Mon</text><text x="4" y="${top + 3 * step + 9}">Wed</text><text x="4" y="${top + 5 * step + 9}">Fri</text>
 ${rects.join('')}
-${sw(left, t.gitlab[3], `GitLab · ${esc(gitlabUser)} (private work, counts only)`)}
-${sw(left + 300, t.github[3], `GitHub · ${esc(githubUser)} (public)`)}
-<text x="${width - 10}" y="${legendY}" text-anchor="end">verify: gitlab.com/${esc(gitlabUser)}</text>
+${sw(left, t.gitlab[3], `GitLab · ${esc(gitlabUser)} · ${fmt(stats.gitlab)}`)}
+${sw(left + 220, t.github[3], `GitHub · ${esc(githubUser)} · ${fmt(stats.github)}`)}
+<text x="${width - 10}" y="${legendY}" text-anchor="end">counts only · verify on both profiles</text>
 </svg>
 `;
 }

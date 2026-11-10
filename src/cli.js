@@ -28,7 +28,7 @@ const lines = [
     kind: 'out',
     text: `${fmt(stats.total)} contributions · ${stats.activeDays} active days · longest streak ${stats.longestStreak}d`,
   },
-  { kind: 'dim', text: `source: gitlab.com/${cfg.gitlab.user} (private, counts only) + github.com/${cfg.github.user}` },
+  { kind: 'dim', text: `gitlab.com/${cfg.gitlab.user} ${fmt(stats.gitlab)} + github.com/${cfg.github.user} ${fmt(stats.github)} · counts only, incl. private` },
 ];
 
 await mkdir(out, { recursive: true });

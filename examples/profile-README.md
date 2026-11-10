@@ -6,13 +6,21 @@ Head of IT at [Voitto](https://www.voitto.com.br), an edtech with 700k+ students
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="out/heatmap-light.svg">
-  <img alt="Contribution heatmap for the last year, merging private GitLab work (orange) and public GitHub activity (green)" src="out/heatmap-dark.svg">
+  <img alt="Contribution heatmap for the last year, merging GitLab (orange) and GitHub (green) contribution counts, private work included" src="out/heatmap-dark.svg">
 </picture>
 
-Most of my work lives in private repositories at Voitto, on GitLab. The card above merges those
-contribution counts with my public GitHub activity. You can check them against GitLab's own
-calendar on [my GitLab profile](https://gitlab.com/EuGuiXtd). The cards are generated daily by
-[forge-bridge](https://github.com/EuGuiXtd/forge-bridge), a small open-source tool I built for this.
+Most of my work lives in private repositories: Voitto's on GitLab, my own products on GitHub.
+The card above merges the daily contribution counts from both, and each number can be checked
+against the platform's own calendar on [GitLab](https://gitlab.com/EuGuiXtd) and here on GitHub.
+It is regenerated daily by [forge-bridge](https://github.com/EuGuiXtd/forge-bridge), a small
+open-source tool I built for this.
+
+## What I'm building
+
+- **[Verbete](https://verbete.devduraes.com.br)** — Portuguese word game played daily, as an installable offline PWA. React + TypeScript, unit and end-to-end tests (Vitest, Playwright). [Source](https://github.com/EuGuiXtd/verbete)
+- **Qyro** *(private)* — SaaS for financial advisors: client intake with Open Finance data, an 8-pillar financial health diagnosis, proposals, billing and a client portal. Next.js, tRPC, Drizzle, PostgreSQL, Turborepo. 700+ commits since June 2026.
+- **AMGSEG** *(private)* — white-label platform for insurance brokerages: new policies, renewals, seller and admin panels. Next.js 15, tRPC, Drizzle, PostgreSQL with row-level security. 300+ commits since August 2026.
+- **[forge-bridge](https://github.com/EuGuiXtd/forge-bridge)** — the contribution card above.
 
 <details>
 <summary>Text version</summary>

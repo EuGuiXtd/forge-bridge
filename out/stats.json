@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-10T15:15:26.621Z",
-  "total": 7078,
+  "generatedAt": "2026-11-10T15:38:39.186Z",
+  "total": 8532,
   "gitlab": 7078,
-  "github": 0,
-  "activeDays": 232,
-  "longestStreak": 12,
+  "github": 1454,
+  "activeDays": 241,
+  "longestStreak": 19,
   "currentStreak": 2,
   "busiestMonth": "2026-08",
-  "busiestMonthTotal": 1331
+  "busiestMonthTotal": 2053
 }
