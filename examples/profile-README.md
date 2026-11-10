@@ -1,4 +1,4 @@
-# Guilherme Durães
+# Guilherme Durães Pereira
 
 Head of IT at [Voitto](https://www.voitto.com.br), an edtech with 700k+ students. I build and run the whole stack: Node.js, React and PHP apps, LLM agents on WhatsApp, and the servers they run on.
 
