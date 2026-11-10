@@ -1,0 +1,13 @@
+{
+  "name": "forge-bridge",
+  "version": "0.1.0",
+  "description": "One contribution card for developers whose real work lives in private GitLab repos: merges GitLab and GitHub activity into verifiable SVGs for your profile README.",
+  "type": "module",
+  "bin": { "forge-bridge": "src/cli.js" },
+  "scripts": {
+    "build": "node src/cli.js",
+    "test": "node --test test/"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

@@ -1,0 +1,16 @@
+{
+  "gitlab": { "user": "EuGuiXtd", "baseUrl": "https://gitlab.com" },
+  "github": { "user": "EuGuiXtd" },
+  "out": "out",
+  "terminal": {
+    "title": "guilherme@voitto: ~",
+    "whoami": "Guilherme Durães · Head of IT @ Voitto · Full-Stack & AI Engineer",
+    "impact": [
+      ["AWS → dedicated servers", "−90% infra cost"],
+      ["LLM sales agent on WhatsApp", "in production"],
+      ["Course player query", "15s → 0.23s"],
+      ["Atomic deploys", "~2 min downtime → 0"],
+      ["Production systems owned", "7"]
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+# Put this in your profile repository (<user>/<user>) as .github/workflows/forge-bridge.yml
+# together with forge-bridge.config.json. It regenerates the SVGs daily and commits them only when they change.
+name: forge-bridge
+
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/checkout@v4
+        with:
+          repository: EuGuiXtd/forge-bridge
+          path: .forge-bridge
+      - run: node .forge-bridge/src/cli.js forge-bridge.config.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit if changed
+        run: |
+          git config user.name "forge-bridge[bot]"
+          git config user.email "forge-bridge@users.noreply.github.com"
+          git add out/
+          git diff --cached --quiet || (git commit -m "chore: update forge-bridge cards" && git push)
